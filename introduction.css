@@ -1,0 +1,313 @@
+html{
+  font-size:10px;
+  line-height:10px;
+}
+body{
+  margin:0px;
+  padding:0px;
+}
+h3{
+  font-size:3em;
+  font-family:'Shadows Into Light', cursive;
+}
+h4{
+  font-size:3em;
+}
+.header{
+  display:flex;
+  background-color:#cfe4bc;
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+}
+.title{
+  margin:auto 5%;
+  line-height:100px;
+  flex:1;
+  align-items:flex-end;
+}
+.header-nav{
+  flex:2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+  font-weight:bolder;
+  letter-spacing:20px;
+  line-heignt:40px;
+  
+}
+.header-nav a{
+   text-decoration:none;
+   color:black;
+}
+.header-nav p{
+  font-family: 'Lemonada', cursive;
+}
+.header-nav a:hover{
+  text-decoration:underline;
+  margin-top:10px;
+  text-decoration-color:#445081;
+}
+.title-name{
+  line-height:300px;
+  color:#445081;
+  font-size:18em;
+  font-weight:bolder;
+  font-family:'Dancing Script', cursive;
+}
+.title-small{
+  color:#445081;
+  font-size:9em;
+  font-family: 'Special Elite', cursive;
+  animation-name:title-small;
+  animation-duration:3s;
+  animation-iteration-count:1;
+}
+.content{
+  display:flex;
+  flex-direction:column;
+  margin: 0px auto;
+  width:90%;
+  
+}
+.content  hr{
+  height:5px;
+  width:100px;
+  border:0px;
+  background-color:black;
+  border-radius:20px;
+  margin-bottom:100px;
+ 
+}
+.int-title{
+  padding-top:40px;
+}
+.introduction{
+  flex:1;
+  padding-top:100px;
+  height:550px;
+  display:flex;
+  text-align:center;
+
+  
+}
+.in-info>h3{
+  animation-name:no-icon-h3;
+  animation-duration:3s;
+  animation-iteration-count:1;
+}
+.experience{
+  height:100vh;
+  flex:1;
+  padding-top:30px;
+  margin-bottom:90px;
+  
+}
+.ex-content{
+  font-size:24px;
+  line-height:32px;
+}
+.ex-title{
+  font-family: 'Sriracha', cursive;
+  font-size:32px;
+}
+.work{
+  background-color:#eeeeee;
+  flex:1;
+  height:100vh;
+  padding-top:-20px;
+  
+}
+.work h4{
+  margin-left:50px;
+  padding-top:50px;
+}
+.work-photo{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+}
+.work-photo img{
+  height:300px;
+  margin:10px 10px;
+  border-radius:20px;
+}
+.work-photo img:hover{
+  height:320px;
+  margin:0;
+  
+}
+.content h2{
+  font-size:4.8em;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.introduction  p{
+  width:20em;
+  padding-left:20px;
+  padding-right:20px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  font-weight:bold;
+  font-size:2em;
+  line-height:2em;
+}
+.introduction .in-info{
+  flex:1;
+  
+}
+.introduction  .in-lifeopinion{
+  flex:1;
+  animation-name:no-icon-h3;
+  animation-duration:3s;
+  animation-iteration-count:1;
+  
+}
+.introduction .no-icon .in-future{
+  flex:1;
+  animation-name:no-icon-h3;
+  animation-duration:3s;
+  animation-iteration-count:1;
+}
+.footer{
+  height:70px;
+  font-size:24px;
+  display:flex;
+  background-color:#8d6e63;
+  flex-direction:row;
+  align-items:center;
+  justify-content:flex-start;
+}
+.icon{
+ margin-left:100px;
+ width:1000px;
+ height:29px;
+ flex:1;
+}
+.icon{
+  flex:1;
+  padding-bottom:auto;
+  
+  
+  width:24px;
+}
+
+
+
+@media screen and (max-height:500px){
+  .title{
+    line-height:80px;
+  }
+  .title-name{
+    font-size:14em;
+    line-height:200px;
+  }
+  .title-small{
+    font-size:7em;
+  }
+  
+}
+@media screen and (max-height:200px){
+
+  
+  .title{
+    display:flex;
+    Flex-direction:column;
+    line-height:80px;
+  }
+  .title-name{
+    flex:1;
+    font-size:7em;
+    font-weight:bold;
+    line-height:100px;
+  }
+  .title-small{
+    flex:1;
+    font-size:4em;
+  }
+  
+}
+/*以下為平板大小*/
+@media screen and (max-width:1300px){
+  .header{
+  display:flex;
+  background-color:#cfe4bc;
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+}
+  
+  .title-name{
+    font-size:10em;
+  }
+  
+  .title-small{
+    font-size:6em;
+  }
+  
+  .header-nav{
+    font-size:16px;
+  }
+  
+  .introduction{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    font-size:1em;
+  }
+  
+  .footer{
+    height:auto;
+    display:flex;
+    flex-direction:column;
+  }
+  
+  .footer>i{
+    flex:1;
+  }
+
+}
+/*以下為手機大小*/
+@media screen and (max-width:700px){
+  .header{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .in-info{
+    flex:1;
+  }
+  .in-lifeopinion{
+    flex:1;
+  }
+  .in-future{
+    flex:1;
+  }
+  
+  .introduction{
+    font-size:0.9em;
+  }
+}
+@keyframes title-small{
+  0%{
+    margin-left:-500px;
+  }
+  50%{
+    margin-left:7%;
+  }
+  100%{
+    
+  }
+}
+@keyframes no-icon-h3{
+  0%{
+    margin-left:-1000px;
+  }
+  100%{
+    
+  }
+  
+}
