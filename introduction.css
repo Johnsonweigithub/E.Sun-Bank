@@ -5,6 +5,7 @@ html{
 body{
   margin:0px;
   padding:0px;
+  overflow-x: hidden;
 }
 h3{
   font-size:3em;
@@ -134,9 +135,8 @@ h4{
   margin-right: 10px;
 }
 .work{
-  width:1000px;
+  width: 980px;
   height:980px;
- /* border: 1px solid black;*/
   margin: 10px auto 10px auto;
   position:relative;
 }
@@ -144,8 +144,8 @@ h4{
 .work .coding{
      height: 500px;
      width:400px;
-     position: absolute;
-     right: 10px; 
+     position: absolute; 
+     right: 0px;
      box-shadow:0px 0px 5px  	#3C3C3C;
      border-radius: 5% 30% 5% 5%;
      background: url(pic/coding.png);
@@ -180,7 +180,6 @@ background-size: 755px;
   height:350px;
   width:550px;
   position: absolute;
-  left: 10px; 
   top:40px;
   overflow: hidden;
   box-shadow:0px 0px 5px  	#3C3C3C;
@@ -307,25 +306,56 @@ background-size: 755px;
   top:255px;
  }
 .footer{
-  height:70px;
+  height:200px;
   font-size:24px;
   display:flex;
-  background-color:#8d6e63;
+  background-color:#114454;/*#001B4E,#4D3F49,*/
   flex-direction:row;
-  align-items:center;
+  align-items: flex-start;
   justify-content:flex-start;
 }
-.icon{
- margin-left:100px;
- width:1000px;
- height:29px;
- flex:1;
-}
-.icon{
-  flex:1;
-  padding-bottom:auto;
 
-  width:24px;
+.with-icon{
+  display: flex;
+  flex-direction: column;
+}
+
+.with-icon div{
+  margin-left:100px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.with-icon p,.with-icon i{
+  color: white;
+}
+
+.footer_title1 {
+  margin-bottom: -30px;
+  color: white;
+}
+
+.footer_title1_first {
+  font-size: 36px;
+}
+
+.footer_title1_last{
+font-size: 28px;
+}
+
+.footer hr{
+  background-color: white;
+  height:2px;
+  width:70px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-left: 135px;
+}
+
+.footer_content1{
+  padding-left:50px;
 }
 
 
@@ -441,6 +471,64 @@ background-size: 755px;
     top:500px;
    }
 
+
+   .work{
+    width:1000px;
+    height:980px;
+    margin: 10px auto 10px auto;
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+  .work .photo, .work .poetry, .work .coding{
+    position: relative;
+    left: 0px;
+    top:0px;
+    width:800px;
+    height:500px;
+    margin: 15px auto 15px auto;
+    border-radius: 15px;
+    background-size: 900px;
+    background-position: left bottom;
+  }
+
+  .work .photo{
+    background-position-y:-260px ;
+  }
+
+  .work .poetry{  
+  background-size: 800px;
+  background-position-y:-460px ;
+}
+
+.work .coding:hover{
+  background-size: 900px;
+  background-position: left bottom;
+}
+
+.work .photo:hover{
+  background-size: 900px;
+  background-position:left bottom;
+  background-position-y:0px,-260px ;
+  
+}
+
+.work .poetry:hover{
+  background-position: left bottom;
+  background-size: 800px;
+  background-position-y:0px,-460px ;
+}
+
+.work .coding p,.work .photo p,.work .poetry p{
+  font-size: 48px;
+  color: white;
+  font-family: 'Sriracha', cursive;
+  position: relative;
+  top: 170px;
+  left: 630px;
+  visibility:hidden;
+  }
+  
    .experience{
      height: 590px;
      flex-direction: column;
@@ -463,6 +551,67 @@ background-size: 755px;
   }
 
 }
+
+/*以下為專為作品三張圖片設計的寬度*/
+@media screen and (max-width:1200px) {
+  .work{
+    width:800px;
+  }
+}
+
+@media screen and (max-width:920px){
+  .work{
+    height: 900px;
+    width:400px;
+    margin: 0px auto 0px auto;
+  }
+  .work .photo, .work .poetry, .work .coding{
+    width:400px;
+    height:240px;
+    margin: 20px auto 20px auto;
+    background-size:600px ;
+  }
+
+  .work .coding p,.work .photo p,.work .poetry p{
+    top: 135px;
+    left: 270px;
+  }
+
+
+  .work .photo{
+    background-position: right top;
+    background-position-x:-90px ;
+    background-position-y:-85px ;
+  }
+
+  .work .poetry{  
+  background-size: 600px;
+  background-position-y:-300px ;
+}
+
+.work .coding:hover{
+  background-size: 600px;
+  background-position: left bottom;
+}
+
+.work .photo:hover{
+  background-size: 600px;
+  background-position: right top;
+    background-position-x:0,-90px ;
+    background-position-y:0,-85px ;
+  
+}
+
+.work .poetry:hover{
+  background-size: 600px;
+  background-position-y:0px,-300px ;
+}
+
+  .experience{
+    padding-top: 0px;
+  }
+}
+
 /*以下為手機大小*/
 @media screen and (max-width:700px){
   .header{
@@ -485,6 +634,10 @@ background-size: 755px;
     font-size:10px;
   }
   
+  .introduction  h3{
+  margin-left: 50px;
+  }
+
   .introduction .in-HeadSticker img{
    position: static;
    flex:1;
