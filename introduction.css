@@ -313,6 +313,7 @@ background-size: 755px;
   flex-direction:row;
   align-items: flex-start;
   justify-content:flex-start;
+  margin-right: -20px;
 }
 
 .with-icon{
