@@ -748,8 +748,9 @@ font-size: 28px;
   }
   
   .footer_content1{
+    font-size: 18px;
     padding-left:0px;
-    margin-left: -70px;
+    margin-left: -100px;
   }
 
   .with-icon :nth-child(3){
