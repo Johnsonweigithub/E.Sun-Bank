@@ -648,7 +648,8 @@ font-size: 28px;
   .introduction .in-info{
     position: static;
     flex:1;
-    font-size:10px;
+    font-size:8px;
+    margin:0px 5px 0px 5px;
   }
   
   .introduction  h3{
@@ -669,8 +670,9 @@ font-size: 28px;
     animation-name:no-icon-h3;
     animation-duration:3s;
     animation-iteration-count:1;
-    font-size: 10px;
+    font-size: 8px;
     top:80px;
+    margin:0px 5px 0px 5px;
   }
   
   .introduction .in-bg1{
