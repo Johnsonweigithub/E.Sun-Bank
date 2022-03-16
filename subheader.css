@@ -1,0 +1,52 @@
+html{
+    font-size:10px;
+    line-height:10px;
+  }
+  body{
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+    width:100vw;
+    height: auto;
+  }
+  .subheader{
+    display:flex;
+    background-color:#cfe4bc;
+    width:100vw;
+    height:80px;
+    /*overflow: hidden;*/
+  }
+  .subheader_title{
+    flex:1;
+    align-items:flex-end;
+    color:#445081;
+    font-size:36px;
+    font-weight:bolder;
+    font-family:'Dancing Script', cursive;
+    display: flex;
+    align-items: center;
+    padding-left:80px;
+  }
+
+  .subheader-nav{
+    width:300px;
+    flex:0.8;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    font-size:16px;
+    font-weight:bolder;
+    letter-spacing:20px;
+    line-height:60px;
+    letter-spacing: 2px;
+    
+  }
+  .subheader-nav a{
+     text-decoration:none;
+     color:black;
+  }
+  .subheader-nav a:hover{
+    text-decoration:underline;
+    margin-top:10px;
+    text-decoration-color:#445081;
+  }

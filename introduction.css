@@ -6,6 +6,11 @@ body{
   margin:0px;
   padding:0px;
   overflow-x: hidden;
+  width:100vw;
+  height: auto;
+}
+div {
+  /*border:2px solid black;*/
 }
 h3{
   font-size:3em;
@@ -17,9 +22,9 @@ h4{
 .header{
   display:flex;
   background-color:#cfe4bc;
-  width:100%;
+  width:100vw;
   height:100vh;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .title{
   margin:auto 5%;
@@ -65,11 +70,12 @@ h4{
   animation-duration:3s;
   animation-iteration-count:1;
 }
+
 .content{
   display:flex;
   flex-direction:column;
   margin: 0px auto;
-  width:90%;
+  width:100%;
   
 }
 .content  hr{
@@ -85,7 +91,7 @@ h4{
   padding-top:40px;
 }
 .introduction{
-  margin-top: 145px;
+  margin: 145px 50px 0px 50px;
   padding-top:10px;
   height:590px;
   display:flex;
@@ -161,6 +167,13 @@ position: relative;
 top: 370px;
 left: 280px;
 visibility: hidden;
+}
+
+.work .coding button{
+  height: 500px;
+  width:400px;
+  background-color: transparent;
+  margin-top: -100px;
 }
 
 .work .coding:hover{
@@ -306,19 +319,20 @@ background-size: 755px;
   top:255px;
  }
 .footer{
-  height:200px;
+  height:auto;
+  width:100vw;
   font-size:24px;
   display:flex;
   background-color:#114454;/*#001B4E,#4D3F49,*/
   flex-direction:row;
-  align-items: flex-start;
-  justify-content:flex-start;
-  margin-right: -20px;
+  padding-bottom: 20px;
+  /*margin-right: -20px;*/
 }
 
 .with-icon{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .with-icon div{
@@ -353,6 +367,7 @@ font-size: 28px;
   border-radius: 5px;
   border: 1px solid white;
   margin-left: 135px;
+  margin-bottom: 0px;
 }
 
 .footer_content1{
