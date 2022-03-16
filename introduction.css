@@ -721,7 +721,30 @@ font-size: 28px;
     line-height: 45px;
     vertical-align:middle;
   }
+
+  .footer{
+    padding-left: -70px;
+  }
   
+  .footer_title1 {
+    margin-bottom: -30px;
+    margin-left: -90px;
+    color: white;
+  }
+  
+  .footer hr{
+    background-color: white;
+    height:2px;
+    width:70px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-left: 95px;
+    margin-bottom: 0px;
+  }
+  
+  .footer_content1{
+    padding-left:0px;
+  }
   
   
 }
