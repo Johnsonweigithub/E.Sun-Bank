@@ -724,15 +724,20 @@ font-size: 28px;
 
   .footer{
     padding-left: -70px;
+    position: relative;
   }
   
   .footer_title1 {
+   position:absolute;
+   left:-70px;
     margin-bottom: -30px;
-    margin-left: -90px;
     color: white;
   }
   
   .footer hr{
+    position:absolute;
+    top:50px;
+    left:-40px;
     background-color: white;
     height:2px;
     width:70px;
@@ -744,10 +749,14 @@ font-size: 28px;
   
   .footer_content1{
     padding-left:0px;
+    margin-left: -70px;
   }
-  
-  
+
+  .with-icon :nth-child(3){
+    margin-top: 70px;
+  }
 }
+
 @keyframes title-small{
   0%{
     margin-left:-500px;
