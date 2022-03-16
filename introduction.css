@@ -5,12 +5,13 @@ html{
 body{
   margin:0px;
   padding:0px;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   width:100vw;
   height: auto;
+  border:2px solid blue;
 }
 div {
-  /*border:2px solid black;*/
+  border:2px solid black;
 }
 h3{
   font-size:3em;
