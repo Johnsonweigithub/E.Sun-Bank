@@ -16,3 +16,140 @@
     width:100vw;
     height: auto;
   }
+
+  div{
+    /*border:2px solid red;*/
+  }
+
+  .code_title{
+    width:350px;
+    padding:auto 0px auto 0px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }
+
+.code_content{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+  .code_title p{
+    display: inline;
+    font-weight:bold;
+    font-size:2.6em;
+    line-height:2em;
+  }
+
+  .code_introduce{
+    width:60vw;
+    min-width: 500px;
+  }
+  
+  .code_introduce  p{
+    width:30em;
+    padding-left:20px;
+    padding-right:20px;
+    margin-left:18%;
+    margin-right:auto;
+    text-align:left;
+    font-weight:bold;
+    font-size:2em;
+    line-height:2em;
+  }
+
+  .code_subtitle{
+    font-size: 28px;
+    font-weight:bold;
+   margin-left:15%;
+   margin-top: 80px;
+   line-height: 1em;
+   
+  }
+
+  .code_link{
+    width:39vw;
+  }
+
+  .code_link .QRcode{
+    margin-top: 10px;
+    margin-left: 150px;
+  }
+
+  .githubhref{
+    margin-top: 20px;
+    width:39vw;
+  }
+.code_link a{
+color: black;
+font-size: 22px;
+text-decoration: none;
+font-weight: bolder;
+padding-top: 20px;
+
+}
+
+  .project_detial{
+    margin-bottom: 40px;
+    padding-top: 40px;
+    width:100vw;
+  }
+
+  .project_detial_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 5px 0px  5px;
+  /*border:2px solid red;*/
+  
+  }
+
+  .project_detial_content :nth-child(n){
+  margin: 5px 0 5px 0;
+  display: flex;
+  align-items: center;
+  /*border: 2px solid green;*/
+  }
+
+  .contentblock_left{
+    justify-content: start;
+    width:1000px;
+  }
+
+  .contentblock_right{
+    justify-content: flex-end;
+    width:1000px;
+    
+  }
+ 
+  .project_detial_content :nth-child(n) p{
+    width:500px;
+    margin:0px 70px 0px 70px;
+    font-size: 28px;
+    font-family: 'Sriracha', cursive;
+    line-height: 40px;
+    font-weight:900;
+  }
+
+  .project_detial_content img{
+      width: 240px;
+  }
+
+
+  @media screen and (max-width:1100px){
+    .code_content{
+    flex-direction: column;
+    }
+
+    .code_link{
+      width:60vw;
+    }
+
+    .contentblock_left, .contentblock_right{
+    display:flex;
+    flex-direction: column;
+    }
+
+    .project_detial_content_02 img, .project_detial_content_04 img, .project_detial_content_06 img, .project_detial_content_10 img, .project_detial_content_13 img, .project_detial_content_15 img{order: -1;}
+
+  }

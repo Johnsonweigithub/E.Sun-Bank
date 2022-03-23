@@ -1,0 +1,26 @@
+h3{
+    font-size:3em;
+    font-family:'Shadows Into Light', cursive;
+  }
+  h4{
+    font-size:3em;
+  }
+  html{
+    font-size:10px;
+    line-height:10px;
+  }
+  body{
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+    width:100vw;
+    height: auto;
+  }
+
+  div{
+    /*border:2px solid red;*/
+  }
+
+  .footer {
+   visibility: hidden;
+  }

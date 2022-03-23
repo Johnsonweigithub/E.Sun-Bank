@@ -2,6 +2,7 @@
 <html>
 <header>
     <link rel="stylesheet" type="text/css" href="subheader.css">
+    <script type="text/javascript" src="subheader.js"></script>
 </header>
 
 <body>
@@ -12,13 +13,15 @@
         </div>
 
         <div class="subheader-nav">
-            <a href="#intgohere">HOME</a>
 
-            <a href="#extgohere">CODING</a>
+            <a href="#extgohere" onclick="parent.location.href='index.html'">HOME</a>
 
-            <a href="#worktgohere">PHOTO</a>
+            <a href="#extgohere" onclick="parent.location.href='coding.html'">CODING</a>
 
-            <a href="#worktgohere">POETRY</a>
+            <a href="#worktgohere" onclick="parent.location.href='photo.html'">PHOTO</a>
+
+            <a href="#worktgohere" onclick="parent.location.href='poetry.html'">POETRY</a>
+
         </div>
 
     </div>

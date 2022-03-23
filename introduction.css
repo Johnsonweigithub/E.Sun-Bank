@@ -169,11 +169,19 @@ left: 280px;
 visibility: hidden;
 }
 
-.work .coding button{
+.work .coding button, .work .poetry button{
   height: 500px;
   width:400px;
   background-color: transparent;
   margin-top: -100px;
+  border:0;
+}
+ .work .photo button{
+  height: 500px;
+  width:700px;
+  background-color: transparent;
+  margin-top: -100px;
+  border:0;
 }
 
 .work .coding:hover{
@@ -187,7 +195,6 @@ background-size: 755px;
   animation-duration:3s;
   animation-iteration-count:1;
 }
-  
 
 .work .photo{
   height:350px;
@@ -223,7 +230,6 @@ background-size: 755px;
     animation-iteration-count:1;
   }
     
-
 .work .poetry{
   height:450px;
   width:370px;
@@ -274,11 +280,13 @@ background-size: 755px;
   font-size:2em;
   line-height:2em;
 }
+
 .introduction .in-info{
   font-size: 12px;
   position: absolute;
   left:70px;
 }
+
 .introduction .in-HeadSticker img{
  width: 250px;
  height: 240px;
@@ -517,6 +525,14 @@ font-size: 28px;
   background-position-y:-460px ;
 }
 
+.work .coding button, .work .poetry button,.work .photo button{
+  height: 290px;
+  width:800px;
+  background-color: transparent;
+  margin-top: -100px;
+  border:0;
+}
+
 .work .coding:hover{
   background-size: 900px;
   background-position: left bottom;
@@ -586,6 +602,14 @@ font-size: 28px;
     height:240px;
     margin: 20px auto 20px auto;
     background-size:600px ;
+  }
+
+  .work .coding button, .work .poetry button,.work .photo button{
+    height: 230px;
+    width:400px;
+    background-color: transparent;
+    margin-top: -100px;
+    border:0;
   }
 
   .work .coding p,.work .photo p,.work .poetry p{
@@ -710,6 +734,20 @@ font-size: 28px;
     background-position: left bottom;
   }
 
+
+  .work .coding button, .work .poetry button,.work .photo button{
+    height: 190px;
+    width:290px;
+    background-color: transparent;
+    margin-top: -80px;
+    border:0;
+  }
+
+  .work .coding p,.work .photo p,.work .poetry p{
+    top: 110px;
+    left: 200px;
+    font-size: 36px;
+  }
 
    .experience{
     height: 590px;
